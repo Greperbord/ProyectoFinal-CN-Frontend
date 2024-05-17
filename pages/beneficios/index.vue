@@ -73,7 +73,9 @@
       </li>
 
       <li class="list-inline-item" style="margin-top: 50px; color: white;">
-        <NuxtLink to="/beneficios">Beneficios</NuxtLink>
+        <a href="/beneficios/index.vue" style="text-decoration: none; color: #1C1D31;">
+          <span>Beneficios</span>
+        </a>
       </li>
 
       <li class="list-inline-item" style="margin-top: 50px; color: white;">
@@ -119,197 +121,6 @@
     </v-app-bar>
 
     <v-main class="grey lighten-2">
-      <div fluid>
-        <v-img :src="require('@/assets/images/banner.png')">
-          <v-row no-gutters>
-            <v-col cols="7">
-              <v-card max-width="300px" style="margin-top: 100px; margin-left: 100px;" color="#12F901" align="center">
-                <v-card-title>TÉRMINOS Y CONDICIONES</v-card-title>
-                <v-card-subtitle>TE RECOMENDAMOS REVISAR NUESTROS TERMINOS Y CONDICIONES ANTES DE RESERVAR. EVITA CONTRATIEMPOS.</v-card-subtitle>
-              </v-card>
-            </v-col>
-            <v-col>
-              <v-card align="center" class="ma-2" style="background-color: #1C1D31; border-radius: 20px">
-                <v-img style="border-radius: 100px; max-width: 90px; margin-left: -610px;" :src="require('@/assets/images/hand_wave.png')" />
-                <v-card-title style="color: white; margin-left: 90px;">
-                  Bienvenido
-                </v-card-title>
-                <v-card-subtitle style="color: white; margin-left: 90px;" align="left">
-                  ¿A donde viajaremos hoy?
-                </v-card-subtitle>
-                <v-card-actions style="margin-left: 100px;">
-                  <v-btn style="border-radius: 20px;">
-                    <v-icon>mdi-cached</v-icon>
-                    <span>Redondo</span>
-                  </v-btn>
-                  <v-btn style="border-radius: 20px;">
-                    <v-icon>mdi-ray-start-arrow</v-icon>
-                    <span>Sencillo</span>
-                  </v-btn>
-                </v-card-actions>
-                <v-card max-width="400" style="border-radius: 20px;" class="pa-2 ma-2">
-                  <v-row>
-                    <v-row class="pa-2 ma-2" style="max-height: 30px;">
-                      <v-icon style="margin-top: -15px; margin-left: 20px;">
-                        mdi-circle-outline
-                      </v-icon>
-                      <v-select
-                        v-model="select"
-                        style="max-width: 300px;"
-                        class="ma-2 pa-2"
-                        :hint="`${select.state}`"
-                        :items="items"
-                        item-text="state"
-                        label="Selecciona el origen:"
-                        persistent-hint
-                        return-object
-                        single-line
-                      />
-                    </v-row>
-                    <v-row class="pa-2 ma-2" style="max-height: 85px;">
-                      <v-icon style="margin-top: -15px; margin-left: 20px;">
-                        mdi-square-outline
-                      </v-icon>
-                      <v-select
-                        v-model="select"
-                        style="max-width: 300px;"
-                        class="ma-2 pa-2"
-                        :hint="`${select.state}`"
-                        :items="items"
-                        item-text="state"
-                        label="Selecciona el destino:"
-                        persistent-hint
-                        return-object
-                        single-line
-                      />
-                    </v-row>
-                  </v-row>
-                </v-card>
-                <v-card-actions style="margin-left: 94px; color: white; margin-right: 100px">
-                  <v-row>
-                    <v-col cols="6">
-                      <span>Salida</span>
-                      <v-btn style="overflow: hidden; background-color: #333446; border-radius: 50px;" outlined color="white">
-                        <v-menu
-                          ref="menu"
-                          v-model="menu"
-                          :close-on-content-click="false"
-                          :return-value.sync="date"
-                          transition="scale-transition"
-                          min-width="auto"
-                        >
-                          <template #activator="{ on, attrs }">
-                            <v-text-field
-                              v-model="date"
-                              style="color: white; margin-left: 20px;"
-                              readonly
-                              v-bind="attrs"
-                              v-on="on"
-                            />
-                          </template>
-                          <v-date-picker
-                            v-model="date"
-                            no-title
-                            scrollable
-                            style="color: white;"
-                          >
-                            <v-spacer />
-                            <v-btn
-                              text
-                              color="primary"
-                              @click="menu = false"
-                            >
-                              Cancel
-                            </v-btn>
-                            <v-btn
-                              text
-                              color="primary"
-                              @click="$refs.menu.save(date)"
-                            >
-                              OK
-                            </v-btn>
-                          </v-date-picker>
-                        </v-menu>
-                      </v-btn>
-                    </v-col>
-                    <v-col cols="6">
-                      <span>Regreso</span>
-                      <v-btn style="overflow: hidden; background-color: #333446; border-radius: 50px; margin-left: -10px;" outlined color="white">
-                        <v-menu
-                          ref="menu2"
-                          v-model="menu2"
-                          :close-on-content-click="false"
-                          :return-value.sync="date"
-                          transition="scale-transition"
-                          min-width="auto"
-                        >
-                          <template #activator="{ on, attrs }">
-                            <v-text-field
-                              v-model="date"
-                              style="color: white; margin-left: 20px;"
-                              readonly
-                              v-bind="attrs"
-                              v-on="on"
-                            />
-                          </template>
-                          <v-date-picker
-                            v-model="date"
-                            no-title
-                            scrollable
-                            style="color: white;"
-                          >
-                            <v-spacer />
-                            <v-btn
-                              text
-                              color="primary"
-                              @click="menu2 = false"
-                            >
-                              Cancel
-                            </v-btn>
-                            <v-btn
-                              text
-                              color="primary"
-                              @click="$refs.menu2.save(date)"
-                            >
-                              OK
-                            </v-btn>
-                          </v-date-picker>
-                        </v-menu>
-                      </v-btn>
-                    </v-col>
-                    <v-col>
-                      <v-col>
-                        Usuarios
-                      </v-col>
-                      <v-btn style="background-color: #333446; border-radius: 20px; width: 397px;" outlined color="white">
-                        <v-select
-                          :items="items2"
-                        />
-                      </v-btn>
-                    </v-col>
-                    <v-col>
-                      <v-row align="center">
-                        <v-checkbox
-                          v-model="checkbox"
-                        />
-                        <span>Equipaje Extra</span>
-                        <v-spacer />
-                        <span>* Costo adicional por trayecto</span>
-                      </v-row>
-                    </v-col>
-                    <v-col>
-                      <v-btn style="background-color: #00E697; border-radius: 20px; width: 397px; height: 50px;" outlined color="black">
-                        <span>Buscar Tours</span>
-                      </v-btn>
-                    </v-col>
-                  </v-row>
-                </v-card-actions>
-              </v-card>
-            </v-col>
-          </v-row>
-        </v-img>
-      </div>
-      <v-spacer />
       <div>
         <v-card style="" color="#F1F6FB" align="center">
           <v-card-title class="justify-center">
@@ -449,21 +260,6 @@
 
 <script>
 export default {
-  auth: 'false',
-  data () {
-    return {
-      select: { state: '' },
-      items: [
-        { state: 'León' },
-        { state: 'Ciudad de México' }
-      ],
-      date: (new Date(Date.now() - (new Date()).getTimezoneOffset() * 60000)).toISOString().substr(0, 10),
-      menu: false,
-      modal: false,
-      menu2: false,
-      items2: ['1', '2', '3', '4'],
-      checkbox: true
-    }
-  }
+  auth: 'false'
 }
 </script>
