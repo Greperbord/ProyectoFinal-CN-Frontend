@@ -260,6 +260,6 @@
 
 <script>
 export default {
-  auth: 'false'
+  auth: false
 }
 </script>
