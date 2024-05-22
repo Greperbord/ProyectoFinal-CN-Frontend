@@ -1,13 +1,17 @@
 <template>
   <v-app id="inspire">
     <v-system-bar app color="rgba(0, 0, 0, 1)">
-      <v-icon color="white">
-        mdi-facebook
-      </v-icon>
+      <a href="https://www.facebook.com/modumcabmx">
+        <v-icon color="white">
+          mdi-facebook
+        </v-icon>
+      </a>
 
-      <v-icon color="white">
-        mdi-instagram
-      </v-icon>
+      <a href="https://www.instagram.com/modumtoursofficial/">
+        <v-icon color="white">
+          mdi-instagram
+        </v-icon>
+      </a>
 
       <v-spacer />
 
@@ -37,22 +41,15 @@
       </li>
     </v-system-bar>
 
-    <v-app-bar extended app color="white">
-      <a href="/" align="center">
-        <v-img style="border-radius: 50px; margin-top: 52px;" :width="100" :src="require('@/assets/images/connectando.jpg')" />
+    <v-app-bar extended app color="white" elevation="0">
+      <a href="/" align="center" class="logo">
+        <v-img src="https://www.connectando.mx/img/logo.svg" />
       </a>
-      <v-toolbar-title style="margin-top: 45px;">
-        <a href="/" style="text-decoration: none; color: black;">
-          <span>CO</span>
-          <span style="color: green; margin-left: -5px;">NN</span>
-          <span style="margin-left: -5px;">ECTANDO</span>
-        </a>
-      </v-toolbar-title>
 
       <v-spacer />
 
       <li class="list-inline-item" style="margin-top: 50px; color: white;">
-        <a href="" style="text-decoration: none; color: #1C1D31;">
+        <a href="/" style="text-decoration: none; color: #1C1D31;">
           <span>Inicio</span>
         </a>
       </li>
@@ -62,7 +59,7 @@
       </li>
 
       <li class="list-inline-item" style="margin-top: 52px; color: white;">
-        <a href="" style="text-decoration: none; color: #1C1D31;">
+        <a href="/eventos" style="text-decoration: none; color: #1C1D31;">
           <v-icon color="black">mdi-calendar</v-icon>
           <span>Eventos y sitios</span>
         </a>
@@ -73,7 +70,9 @@
       </li>
 
       <li class="list-inline-item" style="margin-top: 50px; color: white;">
-        <NuxtLink to="/beneficios">Beneficios</NuxtLink>
+        <a href="/beneficios" style="text-decoration: none; color: #1C1D31;">
+          <span>Beneficios</span>
+        </a>
       </li>
 
       <li class="list-inline-item" style="margin-top: 50px; color: white;">
@@ -81,7 +80,7 @@
       </li>
 
       <li class="list-inline-item" style="margin-top: 50px; color: white;">
-        <a href="" style="text-decoration: none; color: #1C1D31;">
+        <a href="/nosotros" style="text-decoration: none; color: #1C1D31;">
           <span>Nosotros</span>
         </a>
       </li>
@@ -91,7 +90,7 @@
       </li>
 
       <li class="list-inline-item" style="margin-top: 50px; color: white;">
-        <a href="" style="text-decoration: none; color: #1C1D31;">
+        <a href="/ayuda" style="text-decoration: none; color: #1C1D31;">
           <span>Ayuda</span>
         </a>
       </li>
@@ -103,17 +102,17 @@
       <li class="list-inline-item" style="margin-top: 50px; color: white;">
         <v-btn style="border-radius: 20px; text-transform: none; height: 40px;">
           <v-icon>mdi-account-outline</v-icon>
-          <span style="color: #1C1D31;">
-            Inicio Sesión
-          </span>
+          <a href="/login" style="text-decoration: none; color: #1C1D31;">
+            <span>Inicio Sesión</span>
+          </a>
         </v-btn>
       </li>
 
       <li class="list-inline-item" style="margin-top: 50px; color: white;">
         <v-btn style="border-radius: 20px; text-transform: none; background-color: #00E697; height: 40px;">
-          <span style="color: #1C1D31;">
-            Registrate gratis
-          </span>
+          <a href="/register" style="text-decoration: none; color: #1C1D31;">
+            <span>Registrate gratis</span>
+          </a>
         </v-btn>
       </li>
     </v-app-bar>
@@ -311,7 +310,7 @@
       </div>
       <v-spacer />
       <div>
-        <v-card style="" color="#F1F6FB" align="center">
+        <v-card style="" color="#F1F6FB" align="center" elevation="0">
           <v-card-title class="justify-center">
             Beneficios
           </v-card-title>
@@ -370,7 +369,7 @@
               <h3>Quiénes Somos</h3>
               <p>Descubre más de nuestra visión, lo que nos mueve y como queremos cambiar la forma en la que tu viajas por el país</p>
 
-              <a href="">Conoce más de Connectando</a>
+              <a href="" style="text-transform: none; color: gray">Conoce más de Connectando</a>
             </div>
           </div>
 
@@ -419,11 +418,11 @@
                         Ayuda
                       </h3>
                     </li>
-                    <li><a href="https://www.connectando.mx/nosotros" style="color: white; text-decoration: none;">Nosotros</a></li>
-                    <li><a href="https://www.connectando.mx/contacto" style="color: white; text-decoration: none;">Contacto</a></li>
-                    <li><a href="https://www.connectando.mx/login" style="color: white; text-decoration: none;">Inicio Sesión</a></li>
-                    <li><a href="https://www.connectando.mx/register" style="color: white; text-decoration: none;">Regístrate gratis</a></li>
-                    <li><a href="https://www.connectando.mx/beneficios" style="color: white; text-decoration: none;">Beneficios</a></li>
+                    <li><a href="/nosotros" style="color: white; text-decoration: none;">Nosotros</a></li>
+                    <li><a href="/contacto" style="color: white; text-decoration: none;">Contacto</a></li>
+                    <li><a href="/login" style="color: white; text-decoration: none;">Inicio Sesión</a></li>
+                    <li><a href="/register" style="color: white; text-decoration: none;">Regístrate gratis</a></li>
+                    <li><a href="/beneficios" style="color: white; text-decoration: none;">Beneficios</a></li>
                   </ul>
                 </div>
                 <div class="col-md-3">
@@ -433,9 +432,9 @@
                         Información Legal
                       </h3>
                     </li>
-                    <li><a href="https://www.connectando.mx/soporte" style="color: white; text-decoration: none;">Preguntas Frecuentes</a></li>
-                    <li><a href="https://www.connectando.mx/legals/terminos-y-condiciones" style="color: white; text-decoration: none;">TÉRMINOS Y CONDICIONES</a></li>
-                    <li><a href="https://www.connectando.mx/legals/aviso-de-privacidad" style="color: white; text-decoration: none;">AVISO DE PRIVACIDAD</a></li>
+                    <li><a href="/ayuda" style="color: white; text-decoration: none;">Preguntas Frecuentes</a></li>
+                    <li><a href="/terminos-y-condiciones" style="color: white; text-decoration: none;">TÉRMINOS Y CONDICIONES</a></li>
+                    <li><a href="/aviso-de-privacidad" style="color: white; text-decoration: none;">AVISO DE PRIVACIDAD</a></li>
                   </ul>
                 </div>
               </div>
@@ -449,7 +448,7 @@
 
 <script>
 export default {
-  auth: 'false',
+  auth: false,
   data () {
     return {
       select: { state: '' },
@@ -462,8 +461,17 @@ export default {
       modal: false,
       menu2: false,
       items2: ['1', '2', '3', '4'],
-      checkbox: true
+      checkbox: false
     }
   }
 }
 </script>
+
+<style scoped>
+.logo {
+    width: 250px;
+    mix-blend-mode: multiply;
+    margin-right: 30px;
+    margin-top: 50px;
+}
+</style>

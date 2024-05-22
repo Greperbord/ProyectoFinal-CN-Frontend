@@ -117,62 +117,65 @@
       </li>
     </v-app-bar>
 
-    <v-main class="grey lighten-2">
-      <div>
-        <v-card style="" color="#F1F6FB" align="center" elevation="0">
-          <v-card-title class="justify-center">
-            Beneficios
-          </v-card-title>
-          <v-img :src="require('@/assets/images/beneficios.png')" />
-        </v-card>
-      </div>
-
-      <div class="row align-items-center" style="background-color: white;">
-        <div class="col-12 col-md-4 offset-md-1">
-          <div style="margin-top: 150px;">
-            <small class="text-uppercase">Beneficios para miembros</small>
-            <h1>Crear una cuenta</h1>
-
-            <v-icon color="green">
-              mdi-check-circle
-            </v-icon>
-            <span>Cancelaciones con un solo click</span>
-            <v-spacer />
-            <v-icon color="green">
-              mdi-check-circle
-            </v-icon>
-            <span>CONNEXIONES gratis</span>
-            <v-spacer />
-            <v-icon color="green">
-              mdi-check-circle
-            </v-icon>
-            <span>Tarifas especiales y promociones</span>
-            <v-spacer />
-            <v-icon color="green">
-              mdi-check-circle
-            </v-icon>
-            <span>Seguro de viajero extendido</span>
-            <v-spacer />
-            <v-icon color="green">
-              mdi-check-circle
-            </v-icon>
-            <span>Modificaciones a tu itinerario</span>
-          </div>
-
-          <div class="d-flex align-items-center app-store-logos">
-            <a href="https://apps.apple.com/cz/app/connectando/id1628111517"><img src="https://www.connectando.mx/img/apple-store.svg" alt="Descarga en la App Store" class="me-3"></a>
-            <a href="https://play.google.com/store/apps/details?id=mx.modumcab.connectapp"><img src="https://www.connectando.mx/img/android-store.svg" alt="Descarga en la Google Play Store"></a>
+    <v-main class="white">
+      <section style="background-color: white">
+        <div class="container mt-5" style="text-align: center;">
+          <div>
+            <small class="text-uppercase">Ayuda y Soporte</small>
+            <h3>TÉRMINOS Y CONDICIONES</h3>
           </div>
         </div>
 
-        <div class="col-12 col-md-6">
-          <img src="https://www.connectando.mx/img/call-to-action.png" class="img-fluid" alt="">
+        <div class="container my-5 mt-0">
+          <div class="row">
+            <div class="col-md-10 ms-auto me-auto mt-2 px-5">
+              <p><small>Última actualización: 2022-10-19 12:07:31</small></p>
+              <hr>
+
+              <p><em>CLIENTE:</em> Operadora Turística Modum S.A de C.V</p>
+
+              <br>
+
+              <p><br></p>
+
+              <p>En cumplimiento a lo establecido por la Ley Federal de Protección de Datos Personales y el Reglamento de Ley Federal de Protección de Datos Personales en Posesión de los Particulares, se hace de su conocimiento que&nbsp;<strong>OPERADORA TURÍSTICA MODUM S.A. DE C.V. </strong>&nbsp;(en adelante&nbsp;<strong>CONNECTANDO</strong>) respeta el derecho a la privacidad y protección de datos personales.&nbsp;</p>
+
+              <p><br></p>
+
+              <p>Los datos personales que&nbsp;<strong>CONNECTANDO </strong>puede recabar incluyen nombres, apellidos, domicilios, teléfonos de oficina y celular, correos electrónicos, claves del registro federal de contribuyentes, información de formas de pago; y toda aquella información que el titular nos proporcione a lo largo de la relación contractual o comercial que establezcan; aquellos datos propios y relacionados con los servicios que&nbsp;<strong>CONNECTANDO </strong>presta y/o comercializa.&nbsp;</p>
+
+              <p><br></p>
+
+              <p>Los datos personales podrán ser tratados y utilizados por&nbsp;<strong>CONNECANTANDO</strong>&nbsp;para cumplir aquellas obligaciones que se derivan de la relación jurídica y/o comercial existente; la identificación, operación, administración y comercialización de servicios contratados; ser contactado y enviar información a fin de conocer el nivel de satisfacción en relación con la adquisición de los servicios, así como dar seguimiento a sugerencias, reclamaciones y/o cualquier otra solicitud o para realizar acciones de actualizaciones técnicas de los servicios que hubiese adquirido; ser contactado y enviar información para darle a conocer información comercial de nuestra empresa, entre la que se destaca la relacionada con promociones, información de nuevos servicios, eventos, cambios en productos y/o servicios, evaluación de la calidad en los servicios, información de nuestros socios de negocios, estudios internos sobre hábitos de consumo, incluyendo cualquier acción de mercadotecnia, publicidad, estadística y de prospección comercial; ser contactado y enviar información para dar cumplimiento a requerimientos legales, mantener actualizados nuestros registros, dar seguimiento a nuestra relación comercial, si existiese, y mantener comunicación en general.&nbsp;</p>
+
+              <p><br></p>
+
+              <p><strong>CONNECTANDO </strong>podrá transferir los datos personales que obren en sus bases de datos a sus empresas filiales y/o subsidiarias e incluso a terceras personas, nacionales o extranjeras, salvo que los titulares respectivos manifiesten expresamente su oposición.&nbsp;</p>
+
+              <p><br></p>
+
+              <p>Para limitar el uso o divulgación de sus datos personales, así como para revocar su consentimiento y ejercer los derechos de acceso, rectificación, cancelación u oposición, deberá presentar una solicitud a nuestro departamento de protección de datos personales comunicándose al correo&nbsp;<a href="mailto:hola@connectando.mx">hola@connectando.mx</a></p>
+
+              <p><br></p>
+
+              <p><strong>CONNECTANDO </strong>se reserva el derecho de cambiar, modificar y/o complementar el presente Aviso de Privacidad, en cualquier momento. Las modificaciones serán oportunamente informadas a través de nuestra página de Internet <a href="http://www.connectando.mx">www.connectando.mx</a></p>
+
+              <p><br></p>
+
+              <p>&nbsp;</p>
+
+              <br>
+              <br>
+
+              <p><small>El presente aviso de privacidad cubre los requisitos contemplados en el artículo 16 de la Ley Federal de Protección de Datos Personales en Posesión de Particulares.</small></p>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
 
       <div style="background-color: white;">
         <div class="row" style="margin-left: 100px; margin-right: 100px;">
-          <div class="col-md-4">
+          <div class="col-md-4" style=" margin-top: 100px">
             <div>
               <v-icon>mdi-truck</v-icon>
               <h3>Quiénes Somos</h3>
@@ -182,7 +185,7 @@
             </div>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-4" style=" margin-top: 100px">
             <div>
               <v-icon>mdi-web</v-icon>
               <h3>Medio Ambiente</h3>
@@ -190,7 +193,7 @@
             </div>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-4" style=" margin-top: 100px">
             <div>
               <v-icon>mdi-account-outline</v-icon>
               <h3>Seguridad</h3>

@@ -118,6 +118,22 @@
     </v-app-bar>
 
     <v-main class="grey lighten-2">
+      <div style="background-color: white;">
+        <div class="row align-items-center" style="margin-left: 100px; margin-right: 100px;">
+          <div class="col-md-6 offset-md-3 text-center">
+            <h4 class="mb-4 mt-4">
+              Contacta con Nosotros
+            </h4>
+            <p class="mb-3">
+              Whatsapp: 477 569 67 26
+            </p>
+            <p class="mb-5">
+              Correo: ventas@modumcab.com
+            </p>
+          </div>
+        </div>
+      </div>
+
       <div>
         <v-card style="" color="#F1F6FB" align="center" elevation="0">
           <v-card-title class="justify-center">
@@ -125,49 +141,6 @@
           </v-card-title>
           <v-img :src="require('@/assets/images/beneficios.png')" />
         </v-card>
-      </div>
-
-      <div class="row align-items-center" style="background-color: white;">
-        <div class="col-12 col-md-4 offset-md-1">
-          <div style="margin-top: 150px;">
-            <small class="text-uppercase">Beneficios para miembros</small>
-            <h1>Crear una cuenta</h1>
-
-            <v-icon color="green">
-              mdi-check-circle
-            </v-icon>
-            <span>Cancelaciones con un solo click</span>
-            <v-spacer />
-            <v-icon color="green">
-              mdi-check-circle
-            </v-icon>
-            <span>CONNEXIONES gratis</span>
-            <v-spacer />
-            <v-icon color="green">
-              mdi-check-circle
-            </v-icon>
-            <span>Tarifas especiales y promociones</span>
-            <v-spacer />
-            <v-icon color="green">
-              mdi-check-circle
-            </v-icon>
-            <span>Seguro de viajero extendido</span>
-            <v-spacer />
-            <v-icon color="green">
-              mdi-check-circle
-            </v-icon>
-            <span>Modificaciones a tu itinerario</span>
-          </div>
-
-          <div class="d-flex align-items-center app-store-logos">
-            <a href="https://apps.apple.com/cz/app/connectando/id1628111517"><img src="https://www.connectando.mx/img/apple-store.svg" alt="Descarga en la App Store" class="me-3"></a>
-            <a href="https://play.google.com/store/apps/details?id=mx.modumcab.connectapp"><img src="https://www.connectando.mx/img/android-store.svg" alt="Descarga en la Google Play Store"></a>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6">
-          <img src="https://www.connectando.mx/img/call-to-action.png" class="img-fluid" alt="">
-        </div>
       </div>
 
       <div style="background-color: white;">
