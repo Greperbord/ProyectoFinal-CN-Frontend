@@ -1,81 +1,5 @@
 <template>
   <v-app id="inspire">
-    <v-app-bar extended app color="white" elevation="0">
-      <a href="/" align="center" class="logo">
-        <v-img src="https://www.connectando.mx/img/logo.svg" />
-      </a>
-
-      <v-spacer />
-
-      <li class="list-inline-item" style="margin-top: 50px; color: white;">
-        <a href="/" style="text-decoration: none; color: #1C1D31;">
-          <span>Inicio</span>
-        </a>
-      </li>
-
-      <li class="list-inline-item" style="margin-top: 50px; color: white;">
-        <span style="color: white;">|</span>
-      </li>
-
-      <li class="list-inline-item" style="margin-top: 52px; color: white;">
-        <a href="/eventos" style="text-decoration: none; color: #1C1D31;">
-          <v-icon color="black">mdi-calendar</v-icon>
-          <span>Eventos y sitios</span>
-        </a>
-      </li>
-
-      <li class="list-inline-item" style="margin-top: 50px; color: white;">
-        <span style="color: white;">|</span>
-      </li>
-
-      <li class="list-inline-item" style="margin-top: 50px; color: white;">
-        <a href="/beneficios" style="text-decoration: none; color: #1C1D31;">
-          <span>Beneficios</span>
-        </a>
-      </li>
-
-      <li class="list-inline-item" style="margin-top: 50px; color: white;">
-        <span style="color: white;">|</span>
-      </li>
-
-      <li class="list-inline-item" style="margin-top: 50px; color: white;">
-        <a href="/nosotros" style="text-decoration: none; color: #1C1D31;">
-          <span>Nosotros</span>
-        </a>
-      </li>
-
-      <li class="list-inline-item" style="margin-top: 50px; color: white;">
-        <span style="color: white;">|</span>
-      </li>
-
-      <li class="list-inline-item" style="margin-top: 50px; color: white;">
-        <a href="/ayuda" style="text-decoration: none; color: #1C1D31;">
-          <span>Ayuda</span>
-        </a>
-      </li>
-
-      <li class="list-inline-item" style="margin-top: 50px; color: white;">
-        <span style="color: white;">|</span>
-      </li>
-
-      <li class="list-inline-item" style="margin-top: 50px; color: white;">
-        <v-btn style="border-radius: 20px; text-transform: none; height: 40px;">
-          <v-icon>mdi-account-outline</v-icon>
-          <a href="/login" style="text-decoration: none; color: #1C1D31;">
-            <span>Inicio Sesión</span>
-          </a>
-        </v-btn>
-      </li>
-
-      <li class="list-inline-item" style="margin-top: 50px; color: white;">
-        <v-btn style="border-radius: 20px; text-transform: none; background-color: #00E697; height: 40px;">
-          <a href="/register" style="text-decoration: none; color: #1C1D31;">
-            <span>Registrate gratis</span>
-          </a>
-        </v-btn>
-      </li>
-    </v-app-bar>
-
     <v-main class="grey lighten-2">
       <div class="row align-items-center" style="background-color: white;">
         <div class="col-6 col-md-5 offset-md-1">
@@ -139,31 +63,6 @@
             </v-row>
             <v-row style="max-height: 30px; max-width: 500px; margin-top: 80px !important;">
               <v-col>
-                <label style="font-size: 15px !important;">CORREO ELECTRÓNICO*</label>
-                <v-row class="ma-2">
-                  <v-text-field
-                    v-model="email"
-                    rounded
-                    outlined
-                  />
-                </v-row>
-              </v-col>
-            </v-row>
-            <v-row style="max-height: 30px; max-width: 500px; margin-top: 80px !important;">
-              <v-col>
-                <label style="font-size: 15px !important;">CONTRASEÑA*</label>
-                <v-row class="ma-2">
-                  <v-text-field
-                    v-model="password"
-                    type="password"
-                    rounded
-                    outlined
-                  />
-                </v-row>
-              </v-col>
-            </v-row>
-            <v-row style="max-height: 30px; max-width: 500px; margin-top: 80px !important;">
-              <v-col>
                 <label style="font-size: 15px !important;">TELEFONO*</label>
                 <v-row class="ma-2">
                   <v-text-field
@@ -174,13 +73,37 @@
                 </v-row>
               </v-col>
             </v-row>
-            <v-row style="max-height: 130px; max-width: 500px; margin-top: 80px !important;">
+            <v-row style="max-height: 30px; max-width: 500px; margin-top: 80px !important;">
               <v-col>
                 <label style="font-size: 15px !important;">EDAD*</label>
                 <v-row class="ma-2">
                   <v-text-field
                     v-model="edad"
-                    :rules="edad"
+                    rounded
+                    outlined
+                  />
+                </v-row>
+              </v-col>
+            </v-row>
+            <v-row style="max-height: 30px; max-width: 500px; margin-top: 80px !important;">
+              <v-col>
+                <label style="font-size: 15px !important;">CORREO ELECTRÓNICO*</label>
+                <v-row class="ma-2">
+                  <v-text-field
+                    v-model="email"
+                    rounded
+                    outlined
+                  />
+                </v-row>
+              </v-col>
+            </v-row>
+            <v-row style="max-height: 130px; max-width: 500px; margin-top: 80px !important;">
+              <v-col>
+                <label style="font-size: 15px !important;">CONTRASEÑA*</label>
+                <v-row class="ma-2">
+                  <v-text-field
+                    v-model="password"
+                    type="password"
                     rounded
                     outlined
                   />
@@ -198,95 +121,13 @@
                   <span style="font-size: 12px !important; margin-top: -15px !important; margin-left: 30px;">Solo mandamos correos de notificación de compra o seguimiento de tu reservación.</span>
                 </v-row>
                 <v-row class="rowCard">
-                  <v-btn block class="pa-2" color="#00e697" rounded @click="login">
+                  <v-btn block class="pa-2" color="#00e697" rounded @click="registrarUsuario">
                     <span style="text-transform: none; color: black;">REGISTRAR TU CUENTA</span>
                   </v-btn>
                 </v-row>
               </v-col>
             </v-card-actions>
           </v-card>
-        </div>
-      </div>
-
-      <div style="background-color: white;">
-        <div class="row" style="margin-left: 100px; margin-right: 100px;">
-          <div class="col-md-4" style=" margin-top: 100px">
-            <div>
-              <v-icon>mdi-truck</v-icon>
-              <h3>Quiénes Somos</h3>
-              <p>Descubre más de nuestra visión, lo que nos mueve y como queremos cambiar la forma en la que tu viajas por el país</p>
-
-              <a href="" style="color: gray">Conoce más de Connectando</a>
-            </div>
-          </div>
-
-          <div class="col-md-4" style=" margin-top: 100px">
-            <div>
-              <v-icon>mdi-web</v-icon>
-              <h3>Medio Ambiente</h3>
-              <p> Por cada CONNEXIÓN se evita, al menos, el víaje de 5 autos privados, ahorrando así emisiones equivalentes a más de 500 mil kilómetros anuales. </p>
-            </div>
-          </div>
-
-          <div class="col-md-4" style=" margin-top: 100px">
-            <div>
-              <v-icon>mdi-account-outline</v-icon>
-              <h3>Seguridad</h3>
-              <p>Contamos con conductores capacitados disminuyendo de esta forma el riesgo de accidentes. </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div style="background-color: #333446;">
-        <div class="row" style="margin-left: 100px; margin-right: 100px;">
-          <div class="row">
-            <div class="col-md-4">
-              <img src="https://www.connectando.mx/img/logo-small.svg" width="100" alt="Connectando">
-              <li class="list-inline-item" style="color: #333446">
-                <a href="https://www.facebook.com/modumcabmx">
-                  <v-icon style="color: white">mdi-facebook</v-icon>
-                </a>
-              </li>
-              <li class="list-inline-item" style="color: #333446">
-                <a href="https://www.instagram.com/modumtoursofficial/">
-                  <v-icon style="color: white">mdi-instagram</v-icon>
-                </a>
-              </li>
-            </div>
-            <div class="col-md-8">
-              <div class="row">
-                <div class="col-md-3" />
-                <div class="col-md-3" />
-                <div class="col-md-3">
-                  <ul class="list-unstyled">
-                    <li class="list-title" style="color: #333446">
-                      <h3 style="color: white;">
-                        Ayuda
-                      </h3>
-                    </li>
-                    <li><a href="/nosotros" style="color: white; text-decoration: none;">Nosotros</a></li>
-                    <li><a href="/contacto" style="color: white; text-decoration: none;">Contacto</a></li>
-                    <li><a href="/login" style="color: white; text-decoration: none;">Inicio Sesión</a></li>
-                    <li><a href="/register" style="color: white; text-decoration: none;">Regístrate gratis</a></li>
-                    <li><a href="/beneficios" style="color: white; text-decoration: none;">Beneficios</a></li>
-                  </ul>
-                </div>
-                <div class="col-md-3">
-                  <ul class="list-unstyled">
-                    <li class="list-title" style="color: #333446">
-                      <h3 style="color: white;">
-                        Información Legal
-                      </h3>
-                    </li>
-                    <li><a href="/ayuda" style="color: white; text-decoration: none;">Preguntas Frecuentes</a></li>
-                    <li><a href="/terminos-y-condiciones" style="color: white; text-decoration: none;">TÉRMINOS Y CONDICIONES</a></li>
-                    <li><a href="/aviso-de-privacidad" style="color: white; text-decoration: none;">AVISO DE PRIVACIDAD</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </v-main>
@@ -296,7 +137,40 @@
 <script>
 export default {
   auth: false,
-  checkbox: false
+  checkbox: false,
+  data () {
+    return {
+      email: null,
+      password: null,
+      nombre: null,
+      apellido: null,
+      telefono: null,
+      edad: null
+    }
+  },
+  methods: {
+    registrarUsuario () {
+      const url = '/register'
+      const data = {
+        email: this.email,
+        password: this.password,
+        nombre: this.nombre,
+        apellido: this.apellido,
+        telefono: this.telefono,
+        edad: this.edad
+      }
+      this.$axios.post(url, data).then((res) => {
+        console.log('@@@ res => ', res)
+        if (res.data.message === 'User registered successfully') {
+          this.showDialog = false
+          this.$router.push('/')
+        }
+      })
+        .catch((error) => {
+          console.log('@@@ error => ', error)
+        })
+    }
+  }
 }
 </script>
 

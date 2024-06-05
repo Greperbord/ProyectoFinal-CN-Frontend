@@ -42,14 +42,14 @@
     </v-system-bar>
 
     <v-app-bar extended app color="white" elevation="0">
-      <a href="/" align="center" class="logo">
+      <a href="/principal" align="center" class="logo">
         <v-img src="https://www.connectando.mx/img/logo.svg" />
       </a>
 
       <v-spacer />
 
       <li class="list-inline-item" style="margin-top: 50px; color: white;">
-        <a href="/" style="text-decoration: none; color: #1C1D31;">
+        <a href="/principal" style="text-decoration: none; color: #1C1D31;">
           <span>Inicio</span>
         </a>
       </li>
@@ -97,23 +97,6 @@
 
       <li class="list-inline-item" style="margin-top: 50px; color: white;">
         <span style="color: white;">|</span>
-      </li>
-
-      <li class="list-inline-item" style="margin-top: 50px; color: white;">
-        <v-btn style="border-radius: 20px; text-transform: none; height: 40px;">
-          <v-icon>mdi-account-outline</v-icon>
-          <a href="/login" style="text-decoration: none; color: #1C1D31;">
-            <span>Inicio Sesión</span>
-          </a>
-        </v-btn>
-      </li>
-
-      <li class="list-inline-item" style="margin-top: 50px; color: white;">
-        <v-btn style="border-radius: 20px; text-transform: none; background-color: #00E697; height: 40px;">
-          <a href="/register" style="text-decoration: none; color: #1C1D31;">
-            <span>Registrate gratis</span>
-          </a>
-        </v-btn>
       </li>
     </v-app-bar>
 
@@ -257,7 +240,7 @@
 
 <script>
 export default {
-  auth: false
+  auth: true
 }
 </script>
 
